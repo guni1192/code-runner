@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Code Runner</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Code runner</h1>
+
+    <label for="language">Language: </label>
+    <select id="language" name="">
+      <option value="C">C</option>
+      <option value="Python">Python</option>
+      <option value="Ruby">Ruby</option>
+    </select>
+
+    <hr>
+
+    <label for="source_code">ソースコード</label>
+    <div id="source_code"></div>
+
+    <label for="input">標準入力</label>
+    <textarea id="input" name="" cols="30" rows="10"></textarea>
+
+    <button id="run_button" class="btn btn-primary">実行(Ctrl+Enter)</button>
+
+    <hr>
+    <label for="stdout">標準出力: </label>
+    <div id="stdout"></div>
+
+    <label for="stderr">標準出力エラー: </label>
+    <div id="stderr"></div>
+
+    <label for="time">実行時間: </label>
+    <div id="time"></div>
+
+    <label for="exit_code">終了コード: </label>
+    <div id="exit_code"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ext-language_tools.js"></script>
+    <script src="js/run.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>
